@@ -16,11 +16,7 @@ export function DarkModeToggle() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger
-        render={
-          <Button variant="outline" size="icon" className="top-5 left-5" />
-        }
-      >
+      <DropdownMenuTrigger render={<Button variant="outline" size="icon" />}>
         <HugeiconsIcon
           icon={Sun02Icon}
           className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"
