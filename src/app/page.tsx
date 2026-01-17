@@ -1,26 +1,13 @@
-import Image from "next/image";
-import { DarkModeToggle } from "@/feature/theme/component/theme-toggle";
+import GlobalSearch from "@/components/root/global-search";
+import ServiceList from "@/components/root/service-list";
+import HelloSections from "@/components/root/sections";
 
 export default function HomePage() {
   return (
-    <main className="relative p-4 md:p-8 lg:p-16">
-      <div className="flex justify-end">
-        <DarkModeToggle />
-      </div>
-      <section className="relative flex flex-col items-center justify-between">
-        <div className=" relative h-1/2 flex flex-col items-center">
-          <Image
-            src="ratel-logo.svg"
-            alt="logo"
-            height={100}
-            width={300}
-            className="w-1/2 pt-20"
-          />
-        </div>
-        <div className=" relative h-full w-full flex justify-center items-center p-4 lg:8">
-          <p className=" text-lg">Application Links</p>
-        </div>
-      </section>
+    <main className="relative px-4 md:px-8 lg:px-16 w-full h-full">
+      <HelloSections />
+      <GlobalSearch />
+      <ServiceList />
     </main>
   );
 }

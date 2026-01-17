@@ -32,7 +32,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="h-dvh w-dvw max-w-7xl mx-auto overflow-hidden">
+          <div className="h-dvh w-dvw max-w-7xl mx-auto overflow-x-hidden">
             {children}
           </div>
         </ThemeProvider>
